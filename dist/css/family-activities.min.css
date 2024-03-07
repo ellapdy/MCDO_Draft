@@ -1,0 +1,72 @@
+.banner {
+  min-height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner h1 {
+  font-size: clamp(3rem, 10wv, 7rem);
+  font-weight: bolder;
+}
+
+.banner--family {
+  background-image: url("../../images/family-activities/banner-sm.jpeg");
+}
+
+.family {
+  padding: 5rem 0;
+}
+.family__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+@media (min-width: 42rem) {
+  .family__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+}
+.family__wrapper a {
+  justify-self: center;
+}
+@media (min-width: 42rem) {
+  .family__cards {
+    display: flex;
+    justify-content: center;
+  }
+}
+.family__card {
+  position: relative;
+  border-radius: 3rem;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+}
+@media (min-width: 42rem) {
+  .family__card {
+    width: 262px;
+    height: 262px;
+  }
+}
+.family__card h3 {
+  position: absolute;
+  top: 5rem;
+  left: unset;
+  bottom: unset;
+  right: 5rem;
+  font-size: 2rem;
+}
+.family__card p {
+  margin-bottom: 0;
+}
+@media (min-width: 42rem) {
+  .family__card p {
+    font-size: 1.4rem;
+    min-height: 20rem;
+  }
+}/*# sourceMappingURL=family-activities.min.css.map */

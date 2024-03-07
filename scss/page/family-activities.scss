@@ -1,0 +1,61 @@
+@use '../abstract/' as *;
+
+.banner {
+    min-height: 40rem;
+    @include flex(center, center);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h1 {
+        font-size: clamp(3rem, 10wv, 7rem);
+        font-weight: bolder;
+    }
+}
+.banner--family {
+    background-image: url('../../images/family-activities/banner-sm.jpeg');
+    @mixin mediaQuery {
+        background-image: url('../../images/family/banner.jpeg');
+    }
+}
+
+.family {
+    padding: 5rem 0;
+    &__wrapper {
+        @include grid(1);
+        @include mediaQuery {
+            @include grid(1);
+        }
+        a {
+            justify-self: center;
+        }
+    }
+    &__cards {
+        @include mediaQuery {
+            display: flex;
+            justify-content: center;
+        }  
+    }
+    &__card {
+        position: relative;
+        border-radius: 3rem;
+        overflow: hidden;
+
+        width: 120px;
+        height: 120px;
+        @include mediaQuery {
+            width: 262px;
+            height: 262px;
+        }
+        h3 {
+            @include absolute (5rem, 5rem, unset, unset);
+            font-size: 2rem;
+        }
+        p {
+            margin-bottom: 0;
+            @include mediaQuery {
+                font-size: 1.4rem;
+                min-height: 20rem;
+            }
+        }
+    }
+}

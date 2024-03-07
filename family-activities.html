@@ -6,9 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./dist/css/main.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
 </head>
 <body>
+    
     <header class="header">
         <div class="container">
             <div class="header__wrapper flex">
@@ -68,93 +68,48 @@
         </div>
     </header>
 
-    <section class="banner">
-        <a href="#">
-            <picture>
-                <source srcset="./images/slider-3.jpg" media="(min-width:460px)">
-                <source srcset="./images/slider 3-sm.jpg" media="(max-width:459px)">
-                <img src="./images/slider-3.jpg" alt="">
-            </picture>
-        </a>
-        <a href="#">
-            <picture>
-                <source srcset="./images/slider-5.jpg" media="(min-width:460px)">
-                <source srcset="./images/slider 6-sm.jpg" media="(max-width:459px)">
-                <img src="./images/slider-5.jpg" alt="">
-            </picture>
-        </a>
-        <a href="#">
-            <picture>
-                <source srcset="./images/slider-2.png" media="(min-width:460px)">
-                <source srcset="./images/slider 2-sm.png" media="(max-width:459px)">
-                <img src="./images/slider-2.png" alt="">
-            </picture>
-        </a>
-        <a href="#">
-            <picture>
-                <source srcset="./images/slider-6.jpg" media="(min-width:460px)">
-                <source srcset="./images/slider 5-sm.jpg" media="(max-width:459px)">
-                <img src="./images/slider-6.jpg" alt="">
-            </picture>
-        </a>
-        <a href="#">
-            <picture>
-                <source srcset="./images/slider-4.jpg" media="(min-width:460px)">
-                <source srcset="./images/slider 4-sm.jpg" media="(max-width:459px)">
-                <img src="./images/slider-4.jpg" alt="">
-            </picture>
-        </a>
-        <a href="#">
-            <picture>
-                <source srcset="./images/slider-1.jpg" media="(min-width:460px)">
-                <source srcset="./images/slider 1-sm.jpg" media="(max-width:459px)">
-                <img src="./images/slider-1.jpg" alt="">
-            </picture>
-        </a>
+    <section class="banner banner--family">
+        <h1>Family Activities</h1>
     </section>
 
-    <section class="cards">
+    <section class="family">
         <div class="container">
-            <div class="cards__wrapper">
-                <a href="#">
-                    <div class="card">
-                        <img src="./images/card-2.jpeg" alt="">
-                        <h4>McDelivery</h4>
+            <div class="family__wrapper">
+                <div class="family__cards">
+                    <!-- card 1 -->
+                <a href="">
+                    <div class="family__card">
+                        <img src="./images/family activities/card 1.jpeg" alt="">
+                        <h3>Happy Meal</h3>
+                        <p>Another McDonald’s world famous icon, the red smile box of Happy Meal was brought in the Philippines in 1997.  Each Happy Meal comes with one of your favorites from McDonald’s – Burger McDo, Chicken McDo, McSpaghetti or 4pc Chicken McNuggets meal and a toy offering that differs almost every month! With every Happy Meal purchased, 50 centavos goes directly to Ronald McDonald House Charities (RMHC) and its programs – Ronald McDonald Read to Learn, Ronald McDonald Bahay Bulilit and Ronald McDonald Bigay Tulong.
+                            Check out this month’s Happy Meal toys!</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="card">
-                        <img src="./images/card-1.jpeg" alt="">
-                        <h4>NXTGEN</h4>
+                <!-- card 2 -->
+                <a href="">
+                    <div class="family__card">
+                        <img src="./images/family activities/card 2.jpeg" alt="">
+                        <h3>Kiddie Crew Workshop</h3>
+                        <p>The first of its kind in the country, the McDonald’s Kiddie Crew Workshop is an annual summer program established in 1991 that allows kids to learn all the fun things that make up McDonald’s. Enroll your kids to this fun learning experience this summer!</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="card">
-                        <img src="./images/card-3.jpg" alt="">
-                        <h4>Careers</h4>
+                <!-- card 3 -->
+                <a href="">
+                    <div class="family__card">
+                        <img src="./images/family activities/card 3.jpeg" alt="">
+                        <h3>Stripes Run</h3>
+                        <p>A yearly fundraiser for the Ronald McDonald House Charities of the Philippines (RMHC), the Stripes Run is a fun-filled event for the whole family. Proceeds help raise funds for the Read to Learn program, which helps grade 1 and 2 students in public schools improve their literacy skills. Stay tuned for more updates!</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="card">
-                        <img src="./images/card-4.jpg" alt="">
-                        <h4>Family Activities</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="card">
-                        <img src="./images/card-5.jpeg" alt="">
-                        <h4>McDelivery App</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="card">
-                        <img src="./images/card-6.jpeg" alt="">
-                        <h4>Charity</h4>
-                    </div>
-                </a>
+                </div>                
             </div>
         </div>
     </section>
+
+
+
+
+
 
     <footer class="footer">
         <div class="container">
@@ -193,18 +148,7 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-
-    <script>
-        var slider = tns({
-        container: '.banner',
-        items: 1,
-        controls: false,
-        autoplayButtonOutput: false,
-        slideBy: 'page',
-        autoplay: true
-     });
-    
+    <script> 
     const toggleBtn = document.querySelector('.toggle__button')
     const dropdown = document.querySelector('.dropdown')
 
@@ -220,5 +164,6 @@
         toggleBtn.classList.remove('cross');
     })
     </script>
+
 </body>
 </html>
